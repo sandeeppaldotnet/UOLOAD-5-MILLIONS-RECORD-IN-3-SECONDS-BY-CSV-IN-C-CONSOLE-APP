@@ -26,7 +26,7 @@ namespace upload_5_million_record_of_csv_file_by_c_sharp_dotnet
         public static void ExportAndSaveDataByLumen()
         {
             List<Tuple<string, string, string>> listA = new List<Tuple<string, string, string>>();
-            using (CsvReader csv = new CsvReader(new StreamReader(@"C:\Users\B R S\Downloads\5mdata.csv"), true))
+            using (CsvReader csv = new CsvReader(new StreamReader(@"C:\Users\User\Downloads\5mdata.csv"), true))
             {
                 while (csv.ReadNextRecord())
                 {
@@ -51,7 +51,7 @@ namespace upload_5_million_record_of_csv_file_by_c_sharp_dotnet
             //LOAD    
             //Created a temporary dataset to hold the records    
             List<Tuple<string, string, string>> listA = new List<Tuple<string, string, string>>();
-            using (var reader = new StreamReader(@"C:\Users\B R S\Downloads\5mdata.csv"))
+            using (var reader = new StreamReader(@"C:\Users\User\Downloads\5mdata.csv"))
             {
                 while (!reader.EndOfStream)
                 {
